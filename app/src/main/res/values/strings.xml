@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Neko</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="previous_season">Previous Season</string>
+    <string name="next_season">Next Season</string>
+    <string name="title_activity_anime_page">Loading Anime...</string>
+
+    <string name="settings_name">appPrefs</string>
+    <string name="season_list_sorting">SEASON_LIST_SORT</string>
+    <string name="season_list_ad">SEASON_LIST_AD</string>
+    <string name="season_list_grid">SEASON_LIST_GRID</string>
+    <string name="search_anime_title">Search Anime</string>
+
+    <string-array name="season_array">
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Fall</item>
+    </string-array>
+    <string-array name="sort_array">
+        <item>Popularity</item>
+        <item>Title</item>
+        <item>Next Airing Episode</item>
+        <item>Avg Score</item>
+        <item>Start Date</item>
+    </string-array>
+    <string-array name="ad_array">
+        <item>Descending</item>
+        <item>Ascending</item>
+    </string-array>
+    <string name="title_activity_schedule">Loading schedule...</string>
+    <string name="login">"LOGGED IN"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/drawer_top_menu">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24px"
+            android:title="Search Anime" />
+        <item
+            android:id="@+id/nav_season_list"
+            android:icon="@drawable/ic_ac_unit_black_24px"
+            android:title="Season List" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_event_note_black_24px"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_marked"
+            android:icon="@drawable/ic_bookmark_black_24px"
+            android:title="Marked Anime" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/drawer_login_menu">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_person_black_24px"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_person_add_black_24px"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_person_add_black_24px"
+            android:title="Logout"
+            android:visible="false"/>
+    </group>
+
+</menu>

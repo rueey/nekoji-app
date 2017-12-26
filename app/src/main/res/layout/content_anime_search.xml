@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yruili.animelist.Activities.SearchActivity"
+    tools:showIn="@layout/app_bar_search">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyle"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:translationZ="5dp"
+        tools:layout_editor_absoluteX="180dp" />
+
+    <LinearLayout
+        android:id="@+id/search_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_results_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No results"
+        tools:layout_editor_absoluteX="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/connect_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unable to connect to server"
+        tools:layout_editor_absoluteX="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/retry_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:layout_editor_absoluteX="180dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="284dp"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>
